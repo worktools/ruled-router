@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { css, cx } from "@emotion/css";
-import { DocSidebar, ISidebarEntry } from "@jimengio/doc-frame";
+import { DocSidebar, ISidebarEntry } from "@worktools/doc-frame";
 
 import DemoParser from "./demo-parser";
 import { HashRedirect, findRouteTarget } from "../../src/dom";

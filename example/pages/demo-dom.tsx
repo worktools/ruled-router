@@ -1,9 +1,9 @@
 import React, { FC, useState } from "react";
 import { css } from "@emotion/css";
-import { DocDemo, DocSnippet, DocBlock } from "@jimengio/doc-frame";
+import { DocDemo, DocSnippet, DocBlock } from "@worktools/doc-frame";
 import { HashLink, HashRedirect } from "../../src/dom";
 import { GenRouterTypeMain, GenRouterTypeTree, genRouter } from "../controller/generated-router";
-import { JimoButton } from "@jimengio/jimo-basics";
+import { JimoButton } from "@worktools/jimo-basics";
 import { attachRuledRouterThemeVariables } from "../../src/theme";
 import { Space } from "@worktools/flex-styles";
 
