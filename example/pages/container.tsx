@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { css, cx } from "emotion";
+import { css, cx } from "@emotion/css";
 import { DocSidebar, ISidebarEntry } from "@jimengio/doc-frame";
 
 import DemoParser from "./demo-parser";

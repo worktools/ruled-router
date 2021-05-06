@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useRef } from "react";
 
-import { cx, css } from "emotion";
+import { cx, css } from "@emotion/css";
 import { GlobalThemeVariables } from "./theme";
 
 export let HashLink: FC<{

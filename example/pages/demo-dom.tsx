@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { css } from "emotion";
+import { css } from "@emotion/css";
 import { DocDemo, DocSnippet, DocBlock } from "@jimengio/doc-frame";
 import { HashLink, HashRedirect } from "../../src/dom";
 import { GenRouterTypeMain, GenRouterTypeTree, genRouter } from "../controller/generated-router";
