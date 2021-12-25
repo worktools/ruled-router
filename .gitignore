@@ -3,7 +3,6 @@ typings/
 .idea/
 .vscode/
 dist/
-webpack/dll/*
 .awcache/
 
 .DS_Store

@@ -2,7 +2,6 @@ var path = require("path");
 let fs = require("fs");
 var webpack = require("webpack");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
-let HtmlWebpackTagsPlugin = require("html-webpack-tags-plugin");
 // let { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 let DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
 let ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");

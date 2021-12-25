@@ -41,7 +41,6 @@ exports.matchTsRule = {
   test: /\.tsx?$/,
   exclude: /node_modules/,
   use: [
-    { loader: "cache-loader" },
     {
       loader: "thread-loader",
       options: {
@@ -62,7 +61,6 @@ exports.matchTsReleaseRule = {
   test: /\.tsx?$/,
   exclude: /node_modules/,
   use: [
-    { loader: "cache-loader" },
     {
       loader: "thread-loader",
       options: {
