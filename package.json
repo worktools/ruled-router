@@ -1,6 +1,6 @@
 {
   "name": "@worktools/ruled-router",
-  "version": "0.2.29-a1",
+  "version": "0.2.29-a2",
   "description": "Router parser designed and customized for web apps in JiMeng.io",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -8,9 +8,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "dev": "webpack serve --hot --config webpack/dev.js",
-    "watch": "webpack serve --hot --config webpack/dev.js",
-    "release": "rm -rfv dist/* && time webpack --config webpack/release.js",
+    "release": "rm -rfv dist/* && vite build --base ./",
     "build": "yarn release",
     "upload": "rsync -avr --progress dist/ tiye.me:~/repo/worktools/ruled-router",
     "gen-router": "ts-node -P tsconfig-node.json -r tsconfig-paths/register example/gen-router.ts",
@@ -38,7 +36,6 @@
   },
   "devDependencies": {
     "@emotion/css": "^11.7.1",
-    "@jimengio/ci-progress-webpack-plugin": "^0.1.0",
     "@jimengio/router-code-generator": "^0.3.0",
     "@types/jest": "^27.0.3",
     "@types/lodash-es": "^4.17.5",
@@ -49,36 +46,21 @@
     "@worktools/doc-frame": "^0.1.14-a4",
     "@worktools/flex-styles": "^0.2.2-a1",
     "@worktools/jimo-basics": "^0.1.13-a1",
-    "css-loader": "^6.5.1",
     "dayjs": "^1.10.7",
-    "duplicate-package-checker-webpack-plugin": "^3.0.0",
-    "file-loader": "^6.2.0",
     "font-awesome": "^4.7.0",
-    "fork-ts-checker-webpack-plugin": "^6.5.0",
-    "html-webpack-plugin": "^5.5.0",
     "jest": "^27.4.5",
-    "mini-css-extract-plugin": "^2.4.5",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "style-loader": "^3.3.1",
-    "thread-loader": "^3.0.4",
     "ts-jest": "^27.1.2",
-    "ts-loader": "^9.2.6",
     "ts-node": "^10.4.0",
     "tsconfig-paths": "^3.12.0",
-    "tsconfig-paths-webpack-plugin": "^3.5.2",
     "typescript": "^4.5.4",
     "typescript-styled-plugin": "^0.18.2",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.65.0",
-    "webpack-bundle-analyzer": "^4.5.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.7.1",
-    "webpack-hud": "^0.1.2"
+    "vite": "^2.7.6",
+    "vite-tsconfig-paths": "^3.3.17"
   },
   "dependencies": {
-    "html-webpack-tags-plugin": "^3.0.2",
     "lodash-es": "^4.17.21",
     "query-string": "^7.0.1"
   }
