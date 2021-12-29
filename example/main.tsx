@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom";
 import React from "react";
 
-import "main.css";
+import "./main.css";
 
 import { parseRoutePath } from "../src/path-parser";
 

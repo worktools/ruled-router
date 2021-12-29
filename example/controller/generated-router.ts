@@ -12,7 +12,7 @@ function qsStringify(queries: { [k: string]: any }) {
 
 // generated
 
-// Generated with router-code-generator@0.2.7
+// Generated with router-code-generator@0.3.0
 
 export let genRouter = {
   parser: {
@@ -40,9 +40,6 @@ export let genRouter = {
     go: () => switchPath(`/`),
   },
 };
-
-/** Deprecating, use GenRouterTypeTree["next"] instead */
-export type GenRouterTypeMain = GenRouterTypeTree["next"];
 
 export interface GenRouterTypeTree {
   next: GenRouterTypeTree["parser"] | GenRouterTypeTree["dom"] | GenRouterTypeTree["$"];
