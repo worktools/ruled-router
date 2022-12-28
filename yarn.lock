@@ -862,13 +862,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/highlight.js@^10.1.0":
-  version "10.1.0"
-  resolved "https://registry.npmmirror.com/@types/highlight.js/-/highlight.js-10.1.0.tgz#89bb0c202997d7a90a07bd2ec1f7d00c56bb90b4"
-  integrity sha512-77hF2dGBsOgnvZll1vymYiNUtqJ8cJfXPD6GG/2M0aLRc29PkvB7Au6sIDjIEFcSICBhCh2+Pyq6WSRS7LUm6A==
-  dependencies:
-    highlight.js "*"
-
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
   version "2.0.4"
   resolved "https://registry.npmmirror.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.4.tgz#8467d4b3c087805d63580480890791277ce35c44"
@@ -966,14 +959,13 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@worktools/doc-frame@^0.1.14-a4":
-  version "0.1.14-a4"
-  resolved "https://registry.npmmirror.com/@worktools/doc-frame/-/doc-frame-0.1.14-a4.tgz#c487208cc2452b3e41a258a4c7edb20ac9a53655"
-  integrity sha512-Km94WKf51rHHJlqCm2BTsbNSFXyqkORjbjWuPmjw/QbcSxhvcjNCY3kjqtg0H01LJ8yCvFhwET939VhaZH1KSw==
+"@worktools/doc-frame@^0.1.15":
+  version "0.1.15"
+  resolved "https://registry.npmmirror.com/@worktools/doc-frame/-/doc-frame-0.1.15.tgz#a247c1a7935935337ab9495ddf572d095ff607d2"
+  integrity sha512-DZzht0Z1a0MP8MjcN5n6ORnlz9HFJZ3d24ioEZPgyvlBCWJoZMDjAntUmMuRbqwH1df06pYIuraof3bqs3P4jQ==
   dependencies:
-    "@types/highlight.js" "^10.1.0"
-    highlight.js "^11.3.1"
-    react-copy-to-clipboard "^5.0.4"
+    highlight.js "^11.7.0"
+    react-copy-to-clipboard "^5.1.0"
     remarkable "^2.0.1"
 
 "@worktools/flex-styles@^0.2.2":
@@ -981,12 +973,12 @@
   resolved "https://registry.npmmirror.com/@worktools/flex-styles/-/flex-styles-0.2.2.tgz#658745a7fa9331b101e50a08ff805a3a1b1e2f1a"
   integrity sha512-WT+0Do6DQPzwe2+/i9MqTh+b21lZSVH90KfYbddBvTLrtbSZDvJ+Vk+vSJieOwYBhyQWfUvj6uxp6HJwduoWDg==
 
-"@worktools/jimo-basics@^0.1.13-a1":
-  version "0.1.13-a1"
-  resolved "https://registry.npmmirror.com/@worktools/jimo-basics/-/jimo-basics-0.1.13-a1.tgz#a96846d11380923dd870d55e81dbd1907b4fe1b0"
-  integrity sha512-Jh1CwEi1u59dalf3WNYfPfWS6kVfdCmJbpwCba2PoKRX+f9o2+XvZirZXh8MUIHHlf+EvltkkPDNBUor1dM1cA==
+"@worktools/jimo-basics@^0.1.13":
+  version "0.1.13"
+  resolved "https://registry.npmmirror.com/@worktools/jimo-basics/-/jimo-basics-0.1.13.tgz#f49bf8b1181e8a631540e67c30aed36c8c0d1971"
+  integrity sha512-L+vCU3c2q+IKMNJkFn7HJntH9gZHhiMP01JYjaOoVQgUOCQf21PQ2K9YDYJKccPNJe5Umi3LsTPnN7je3BCuzQ==
   dependencies:
-    react-transition-group "^4.4.2"
+    react-transition-group "^4.4.5"
 
 acorn-walk@^8.1.1:
   version "8.2.0"
@@ -1606,7 +1598,7 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-highlight.js@*, highlight.js@^11.3.1:
+highlight.js@^11.7.0:
   version "11.7.0"
   resolved "https://registry.npmmirror.com/highlight.js/-/highlight.js-11.7.0.tgz#3ff0165bc843f8c9bce1fd89e2fda9143d24b11e"
   integrity sha512-1rRqesRFhMO/PRF+G86evnyJkCgaZFOI+Z6kdj15TA18funfoqJXvgPCLSf0SWq3SRfg1j3HlDs8o4s3EGq1oQ==
@@ -2430,7 +2422,7 @@ query-string@^8.1.0:
     filter-obj "^5.1.0"
     split-on-first "^3.0.0"
 
-react-copy-to-clipboard@^5.0.4:
+react-copy-to-clipboard@^5.1.0:
   version "5.1.0"
   resolved "https://registry.npmmirror.com/react-copy-to-clipboard/-/react-copy-to-clipboard-5.1.0.tgz#09aae5ec4c62750ccb2e6421a58725eabc41255c"
   integrity sha512-k61RsNgAayIJNoy9yDsYzDe/yAZAzEbEgcz3DZMhF686LEyukcE1hzurxe85JandPUG+yTfGVFzuEw3xt8WP/A==
@@ -2456,7 +2448,7 @@ react-is@^18.0.0:
   resolved "https://registry.npmmirror.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-transition-group@^4.4.2:
+react-transition-group@^4.4.5:
   version "4.4.5"
   resolved "https://registry.npmmirror.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"
   integrity sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==

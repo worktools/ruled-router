@@ -74,7 +74,7 @@ let DemoParser: FC<{}> = React.memo((props) => {
           <input
             type="checkbox"
             checked={slimMode}
-            onClick={(event) => {
+            onChange={(event) => {
               setSlimMode((event.target as any).checked);
             }}
           />
