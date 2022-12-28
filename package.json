@@ -1,6 +1,6 @@
 {
   "name": "@worktools/ruled-router",
-  "version": "0.2.30",
+  "version": "0.2.31",
   "description": "Router parser designed and customized for web apps in JiMeng.io",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -30,10 +30,6 @@
     "url": "https://github.com/worktools/ruled-router/issues"
   },
   "homepage": "https://github.com/worktools/ruled-router#readme",
-  "peerDependencies": {
-    "@types/react": "*",
-    "react": "*"
-  },
   "devDependencies": {
     "@emotion/css": "^11.10.5",
     "@jimengio/router-code-generator": "^0.3.0",
