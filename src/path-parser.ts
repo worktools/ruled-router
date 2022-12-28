@@ -1,5 +1,5 @@
 import { first, isEmpty, assign } from "lodash-es";
-import * as queryString from "query-string";
+import queryString from "query-string";
 
 let _DEV_: boolean = false;
 

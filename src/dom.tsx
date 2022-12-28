@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef } from "react";
+import React, { FC, ReactNode, useEffect, useRef } from "react";
 
 import { cx, css } from "@emotion/css";
 import { GlobalThemeVariables } from "./theme";
@@ -9,6 +9,7 @@ export let HashLink: FC<{
   text?: string;
   title?: string;
   className?: string;
+  children?: ReactNode[];
 }> = (props) => {
   return (
     <a
@@ -36,6 +37,7 @@ export let HashRedirect: FC<{
   delay?: number;
   noDelay?: boolean;
   className?: string;
+  children?: ReactNode[];
 }> = (props) => {
   let timing = useRef(null as NodeJS.Timeout);
   let delay = props.noDelay ? 0 : (props.delay != null ? props.delay : 0.4) * 1000;

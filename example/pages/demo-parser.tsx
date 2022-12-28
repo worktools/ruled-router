@@ -1,10 +1,11 @@
 import React, { FC, useState, useEffect } from "react";
 import { css, cx } from "@emotion/css";
-import { fullscreen, column, row, expand, Space, rowMiddle } from "@worktools/flex-styles";
+import { fullscreen, column, row, expand, rowMiddle } from "@worktools/flex-styles";
+import Space from "@worktools/flex-styles/lib/space";
 import { parseRoutePath, IRouteParseResult, dangerouslyResetCaches } from "../../src/path-parser";
 import { routerRules } from "../models/router-rules";
 
-let DemoParser: FC<{}> = React.memo(props => {
+let DemoParser: FC<{}> = React.memo((props) => {
   let [rulesCode, setRulesCode] = useState(JSON.stringify(routerRules, null, 2));
   let [pathString, setPathString] = useState("/content");
   let [parseResult, setParseResult] = useState(null);
@@ -48,7 +49,7 @@ let DemoParser: FC<{}> = React.memo(props => {
       <textarea
         className={cx(expand, styleTextarea)}
         value={rulesCode}
-        onChange={event => setRulesCode(event.target.value)}
+        onChange={(event) => setRulesCode(event.target.value)}
         placeholder={"Router rules in JSON..."}
         onBlur={() => {
           dangerouslyResetCaches();
@@ -62,7 +63,7 @@ let DemoParser: FC<{}> = React.memo(props => {
             className={cx(expand, stylePath)}
             placeholder="Url path..."
             value={pathString}
-            onChange={event => {
+            onChange={(event) => {
               let path = event.target.value;
               setPathString(path);
 
@@ -73,7 +74,7 @@ let DemoParser: FC<{}> = React.memo(props => {
           <input
             type="checkbox"
             checked={slimMode}
-            onClick={event => {
+            onClick={(event) => {
               setSlimMode((event.target as any).checked);
             }}
           />

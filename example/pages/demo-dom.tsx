@@ -2,10 +2,10 @@ import React, { FC, useState } from "react";
 import { css } from "@emotion/css";
 import { DocDemo, DocSnippet, DocBlock } from "@worktools/doc-frame";
 import { HashLink, HashRedirect } from "../../src/dom";
-import { GenRouterTypeMain, GenRouterTypeTree, genRouter } from "../controller/generated-router";
+import { GenRouterTypeTree, genRouter } from "../controller/generated-router";
 import { JimoButton } from "@worktools/jimo-basics";
 import { attachRuledRouterThemeVariables } from "../../src/theme";
-import { Space } from "@worktools/flex-styles";
+import Space from "@worktools/flex-styles/lib/space";
 
 let code = `
 import { HashLink } from "@worktools/ruled-router";
