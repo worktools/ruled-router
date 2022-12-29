@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom";
 import React from "react";
+import { createRoot } from "react-dom/client";
 
 import "./main.css";
 
@@ -11,11 +12,14 @@ import Container from "./pages/container";
 import { GenRouterTypeTree } from "./controller/generated-router";
 
 const renderApp = () => {
+  const container = document.querySelector(".app");
+  const root = createRoot(container); // createRoot(container!) if you use TypeScript
+
   let routerTree = parseRoutePath(window.location.hash.slice(1), routerRules);
 
   console.log("tree", routerTree);
 
-  ReactDOM.render(<Container router={routerTree as any} />, document.querySelector(".app"));
+  root.render(<Container router={routerTree as any} />);
 };
 
 window.onload = renderApp;
@@ -24,10 +28,8 @@ window.addEventListener("hashchange", () => {
   renderApp();
 });
 
-declare var module: any;
-
-if (module.hot) {
-  module.hot.accept(["./pages/container"], () => {
+if (import.meta.hot) {
+  import.meta.hot.accept(["./pages/container"], () => {
     renderApp();
   });
 }
